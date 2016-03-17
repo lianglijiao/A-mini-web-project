@@ -1,0 +1,28 @@
+    <h1>Sélection des produits</h1>
+    <table class="table">
+        <thead>
+        <td>Nom</td>
+        <td>Prix</td>
+        <td>Quantité</td>
+        </thead>
+        <tr ng-repeat="book in booksList">
+            <td>{{book.nom}}</td>
+            <td>{{book.prix | currency:"&euro;":2}}</td>
+            <td>
+                <select ng-model="book.quantity">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+
+    <div class="row">
+        <div class="col-md-6 col-md-offset-10">
+            <a href='#/shop/{{shopId}}/pay' class="btn btn-primary" role="button">Suivant</a>
+        </div>
+    </div>

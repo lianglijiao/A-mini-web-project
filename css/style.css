@@ -1,0 +1,36 @@
+.main-container {
+    height: 500px;
+    width: 800px;
+}
+.well {
+    height: 100%;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 23px;
+}
+
+.informations {
+    height: 105px;
+}
+
+.sub-element {
+    font-weight: bold;
+}
+
+@media (max-width: 800px) {
+    .main-container {
+        width: 100%
+    }
+
+    .well {
+        height: 100%;
+    }
+
+}
+
+
